@@ -21,6 +21,11 @@ export default function App() {
             <Link href="/(auth)/sign-up" className="mt-4 rounded bg-primary text-white p-4">
                 Go to Sign Up
             </Link>
+            <Link href="/subscriptions/spotify">Spotify Subscriptions</Link>
+            <Link href={{
+                pathname: '/subscriptions/[id]',
+                params: {id: "claude"},
+            }}>Claude Subscription</Link>
         </SafeAreaView>
     );
 }
